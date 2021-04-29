@@ -20,7 +20,6 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        {
         email: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -35,6 +34,9 @@ User.init(
             validate: {
                 lens: [8],
             },
+        },
+        trainer: {
+            isTrainer: true
         },
     },
     {

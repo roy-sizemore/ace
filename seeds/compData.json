@@ -1,8 +1,9 @@
 [
     {
-        "training_taken": "Agile/SCRUM",
+        "training": "Agile/SCRUM",
         "taken": true,
         "verified": true,
-        "comment": "Doing great! Keep up the great work!"
+        "comment": "Doing great! Keep up the great work!",
+        "user_id": 
     }
 ]
