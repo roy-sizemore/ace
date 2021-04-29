@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-// const helpers = require('./utils/helpers'); - not sure if we'll need this but I put it in just in case
+// const helpers = require('./utils/helpers'); - not sure if we'll need this but I left it in just in case
 const sequelize = require('./config/connection');
 
 const app = express();
