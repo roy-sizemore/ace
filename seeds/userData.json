@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Roy",
+        "trainer": true,
+        "expertise_area": "Back-end Dev",
+        "department": "training"
+    },
+    {
+        "name": "Tre",
+        "trainer": true,
+        "expertise_area": "Front-end Dev",
+        "department": "training"
+    },
+    {
+        "name": "Heather",
+        "trainer": true,
+        "expertise_area": "Back-end Dev",
+        "department": "training"
+    },
+    {
+        "name": "Bob",
+        "trainer": false,
+        "expertise_area": "N/A",
+        "department": "Project Development"
+    },
+    {
+        "name": "Suzie",
+        "trainer": false,
+        "expertise_area": "N/A",
+        "department": "Quality Assurance"
+    }
+]
