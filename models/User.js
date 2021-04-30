@@ -35,8 +35,9 @@ User.init(
                 lens: [8],
             },
         },
-        trainer: {
-            isTrainer: true
+        is_trainer: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: true
         },
     },
     {

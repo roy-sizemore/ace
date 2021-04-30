@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Roy",
+        "email": "roy@email.com",
+        "password": "password1234",
+        "is_trainer": true
+    },
+    {
+        "name": "Tre",
+        "email": "tre@email.com",
+        "password": "password4321",
+        "is_trainer": true        
+    },
+    {
+        "name": "Heather",
+        "email": "heather@email.com",
+        "password": "password9876",
+        "is_trainer": true 
+    },
+    {
+        "name": "Bob",
+        "email": "bob@email.com",
+        "password": "trainee1234",
+        "is_trainer": false        
+    },
+    {
+        "name": "Suzie",
+        "email": "suzie@email.com",
+        "password": "trainee4321",
+        "is_trainer": false 
+    },
+    {
+        "name": "Stan",
+        "email": "stan@email.com",
+        "password": "trainee9876",
+        "is_trainer": false 
+    }
+]
