@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, BOOLEAN } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Competency extends Model { }
@@ -11,23 +11,51 @@ Competency.init(
             primaryKey: true,
             autoIncrement: true
         },
-        completed: {
-            isTaken: true
+        is_completed: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         },
-        verified: {
-            isVerified: true
+        is_verified: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         },
         comp_met: {
-            isMet: true
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         },
         comment: {
             type: Datatypes.TEXT,
-            allowNull: true
+            allowNull: true,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
         },
         date_taken: {
             type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW
+        },
+        user_id: {
+            type: DataTypes.INTERGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            },
+        },
+        skill_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'skill',
+                key: 'id'
+            },
+        },
+        training_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'training',
+                key: 'id'
+            },
         },
     },
     {

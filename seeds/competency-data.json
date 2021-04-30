@@ -1,0 +1,22 @@
+[
+    {
+        "user_id": 4,
+        "training_id": 1,
+        "skill_id": 3,
+        "is_completed": true,
+        "is_verified": true,
+        "comp_met": true,
+        "date_taken": "March 12, 2021",
+        "comment": "Great work!"
+    },
+    {
+        "user_id": 5,
+        "training_id": 7,
+        "skill_id": 3,
+        "is_completed": true,
+        "is_verified": true,
+        "comp_met": true,
+        "date_taken": "February 10, 2021",
+        "comment": "Awesome Project Submission!"
+    }
+]

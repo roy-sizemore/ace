@@ -12,9 +12,13 @@ Skill.init(
             autoIncrement: true
         },
         skill_level: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
+        skill_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
     },
     {
         sequelize,

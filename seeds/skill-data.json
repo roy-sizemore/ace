@@ -1,0 +1,22 @@
+[
+    {
+        "skill_level": 0,
+        "skill_name": "Unskilled"
+    },
+    {
+        "skill_level": 1,
+        "skill_name": "Beginner"
+    },
+    {
+        "skill_level": 2,
+        "skill_name": "Intermediate"
+    },
+    {
+        "skill_level": 3,
+        "skill_name": "Advanced"
+    },
+    {
+        "skill_level": 4,
+        "skill_name": "Subject Matter Expert (SME)"
+    }
+]
