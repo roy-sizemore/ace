@@ -1,0 +1,36 @@
+.ace-logo {
+    width: 10rem;
+    height: auto;
+    border: 2px solid red;
+}
+
+.full-page{
+    display: flex;
+}
+
+.left-page {
+    border: 2px solid blue;
+    width: 50rem;
+    height: auto;
+}
+
+.right-page {
+    border: 2px solid lime;
+    width: 30rem;
+    justify-content: center;
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.branding {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-button {
+   margin-left: 13.5rem;
+   margin-top: 2rem;
+}
