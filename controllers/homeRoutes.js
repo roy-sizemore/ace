@@ -7,8 +7,8 @@ router.get('/api', (req, res) => {
 })
   .catch((err) => res.status(500).json(err));
 
-router.post('user', (req, res) => {
-  return res.json(user);
+router.post('/api/user/:user_id', (req, res) => {
+  return res.json(user.id);
 })
   .catch((err) => res.status(500).json(err));
 
