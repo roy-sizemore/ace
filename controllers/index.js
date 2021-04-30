@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const routes = require('./aceRoutes');
+const routes = require('./homeRoutes');
 
 router.use('/', routes);
 
