@@ -4,6 +4,12 @@
     border: 2px solid red;
 }
 
+.small-ace-logo {
+    width: 12rem;
+    height: auto;
+    padding-left: 0rem;
+}
+
 .full-page{
     display: flex;
 }
@@ -33,4 +39,33 @@
 .login-button {
    margin-left: 13.5rem;
    margin-top: 2rem;
+}
+
+.role-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    border: 2px solid red;
+}
+
+.role-header {
+    border: 2px solid blue;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.role-buttons {
+    border: 2px solid lime;
+    margin-top: 2rem;
+}
+
+#trainer-button {
+    margin-right: 10px;
+    width: 9rem;
+}
+
+#trainee-button {
+    margin-left: 10px;
+    width: 9rem;
 }
