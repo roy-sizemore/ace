@@ -80,3 +80,16 @@
 #comp-container {
     border: 2px solid blue;
 }
+
+#dropdown-menus {
+    display: flex;
+    flex-direction: row;
+}
+
+#lang-selections {
+    width: 12rem;
+}
+
+#rating-selections {
+    width: 6rem;
+}
