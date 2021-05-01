@@ -1,4 +1,4 @@
-const { Model, DataTypes, BOOLEAN } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Competency extends Model { }
@@ -24,7 +24,7 @@ Competency.init(
             defaultValue: false
         },
         comment: {
-            type: Datatypes.TEXT,
+            type: DataTypes.TEXT,
             allowNull: true,
             references: {
                 model: 'user',
@@ -37,7 +37,7 @@ Competency.init(
             defaultValue: DataTypes.NOW
         },
         user_id: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'

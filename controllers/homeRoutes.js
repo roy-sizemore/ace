@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const user = require('../seeds/userData.json');
-const apiRoutes = require('/api');
+const apiRoutes = require('./api');
 
 router.get('/api', (req, res) => {
   return res.json(apiRoutes);
