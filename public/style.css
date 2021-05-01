@@ -69,3 +69,14 @@
     margin-left: 10px;
     width: 9rem;
 }
+
+#header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+#comp-container {
+    border: 2px solid blue;
+}
