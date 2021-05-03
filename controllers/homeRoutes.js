@@ -1,15 +1,16 @@
 const router = require('express').Router();
 const user = require('../seeds/userData.json');
-const apiRoutes = require('./api');
 
-router.get('/api', (req, res) => {
-  return res.json(apiRoutes);
+//WHAT DO WE WANT TO DO
+
+
+router.get('/', (req,res)=> {
+  res.render('login')
 })
-  .catch((err) => res.status(500).json(err));
 
 router.post('/api/user/:user_id', (req, res) => {
   return res.json(user.id);
+  //.catch((err) => res.status(500).json(err));
 })
-  .catch((err) => res.status(500).json(err));
 
-module.exports = router;
+// getting an error - see screenshot

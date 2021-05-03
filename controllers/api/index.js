@@ -4,8 +4,10 @@ const trainingRoutes = require('./trainingRoutes');
 const competencyRoutes = require('./competencyRoutes');
 const skillRoutes = require('./skillRoutes');
 
+
+//will have /api prepended
 router.use('/users', userRoutes);
-router.use('/trainings', trainingRoutes);
+router.use('/training', trainingRoutes);
 router.use('/competencies', competencyRoutes);
 router.use('/skills', skillRoutes);
 
