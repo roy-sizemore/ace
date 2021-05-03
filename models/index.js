@@ -7,6 +7,8 @@ User.hasMany(Competency, {
     foreignKey: 'user_id'
 });
 
+
+// Shouldn't this belongsToMany? - notetoself: ask in office hours
 Competency.belongsTo(User, {
     foreignKey: 'id'
 });
