@@ -9,15 +9,16 @@ User.hasMany(Competency, {
 
 
 // Shouldn't this belongsToMany? - notetoself: ask in office hours
-Competency.belongsTo(User, {
-    foreignKey: 'id'
-});
+// Competency.hasMany(User, {
+//     foreignKey: 'user_id'
+// });
 
-Training.belongsTo(Competency, {
+Training.hasMany(Competency, {
     foreignKey: 'id'
 });
 
 Skill.belongsTo(Training, {
+    through: Competency,
     foreignKey: 'id'
 });
 
@@ -25,8 +26,8 @@ Training.hasMany(Skill, {
     foreignKey: 'id'
 });
 
-Competency.hasMany(Training, {
-    foreignKey: 'id'
-});
+// Competency.hasMany(Training, {
+//     foreignKey: 'id'
+// });
 
 module.exports = { User, Competency, Training, Skill };

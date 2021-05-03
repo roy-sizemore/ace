@@ -24,12 +24,12 @@ Competency.init(
             defaultValue: false
         },
         comment: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: true,
-            references: {
-                model: 'user',
-                key: 'id'
-            }
+            // references: {
+            //     model: 'user',
+            //     key: 'id'
+            // }
         },
         date_taken: {
             type: DataTypes.DATE,

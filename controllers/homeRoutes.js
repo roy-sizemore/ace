@@ -4,7 +4,7 @@ const user = require('../seeds/userData.json');
 //WHAT DO WE WANT TO DO
 
 
-router.get('/', (req,res)=> {
+router.get('/', (req, res) => {
   res.render('login')
 })
 
@@ -14,3 +14,5 @@ router.post('/api/user/:user_id', (req, res) => {
 })
 
 // getting an error - see screenshot
+
+module.exports = router;
