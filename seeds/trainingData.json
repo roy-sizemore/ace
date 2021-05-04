@@ -21,7 +21,22 @@
         "training_name": "Agile/SCRUM"
     },
     {
-        "training_name": "Communication Skills"
+        "training_name": "Focus"
+    },
+    {
+        "training_name": "Flexibility"
+    },
+    {
+        "training_name": "Forecasting"
+    },
+    {
+        "training_name": "Coaching"
+    },
+    {
+        "training_name": "Brainstorming"
+    },
+    {
+        "training_name": "Communication"
     },
     {
         "training_name": "Teamwork"
@@ -40,5 +55,26 @@
     },
     {
         "training_name": "MongoDB"
+    },
+    {
+        "training_name": "Self-Learning"
+    },
+    {
+        "training_name": "Time-Mgmt"
+    },
+    {
+        "training_name": "Problem Solving"
+    },
+    {
+        "training_name": "Leadership"
+    },
+    {
+        "training_name": "Scheduling"
+    },
+    {
+        "training_name": "Risk Mgmt"
+    },
+    {
+        "training_name": "Prioritization"
     }
 ]

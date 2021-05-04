@@ -14,40 +14,56 @@
     <title>Trainee</title>
   </head>
   <body>
-    <img class="col-md small-ace-logo" src="../public/img/ace-3-removebg-preview.png"/>
+    <img
+      class="col-md small-ace-logo"
+      src="../public/img/ace-3-removebg-preview.png"
+    />
     <div id="header-container">
-        <h3>Employee Name Here</h3>
-        <h3>Employee ID Here</h3><br><br>
-        <h3>Choose Your Training</h3>
+      <h3>Employee Name Here</h3>
+      <h3>Employee ID Here</h3>
+      <br /><br />
+      <h3>Choose Your Training</h3>
       <div id="comp-header">
         <div>
-        <select class="form-select" id="add" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">Coding Languages</option>
-          <option value="2">Soft Skills</option>
-          <option value="3">Agile/SCRUM/etc</option>
-          <option value="4">Project Management</option>
-        </select>
+          <select
+            class="form-select"
+            id="add"
+            aria-label="Default select example"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">Coding Languages</option>
+            <option value="2">Soft Skills</option>
+            <option value="3">Agile/SCRUM/etc</option>
+            <option value="4">Project Management</option>
+          </select>
         </div>
       </div>
     </div>
     <!--Compentencies go here-->
-    <div id="comp-container">
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <div id="comp-container"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
     <script>
-      var mySelect = document.getElementById('add')
-      const cardContainer = document.getElementById('comp-container')
+      var mySelect = document.getElementById("add");
+      const cardContainer = document.getElementById("comp-container");
 
       // Funtion to add competency cards
 
-      mySelect.onchange = function() {
-      if (document.getElementById('add').value == "1") {
+      mySelect.onchange = function () {
+        if (document.getElementById("add").value == "1") {
+          // Language card
 
-        // Language card
-
-        cardContainer.insertAdjacentHTML('beforeend', `<div class="card" style="width: 18rem">
+          cardContainer.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">Coding Languages</h5>
           <h6 class="card-subtitle mb-2 text-muted">
@@ -59,9 +75,12 @@
               <!--Language Selection-->
             <select class="form-select" id="lang-selections" aria-label="Default select example">
                 <option selected>Pick A Skill</option>
-                <option value="1">HTML</option>
-                <option value="2">CSS</option>
-                <option value="3">Javascript</option>
+                <option value="1">JavaScript/ECMAScript</option>
+                <option value="2">Java</option>
+                <option value="3">Python</option>
+                <option value="4">TypeScript</option>
+                <option value="5">Angular</option>
+                <option value="6">Ruby</option>
               </select>
               <!--Number selection-->
               <select class="form-select" id="rating-selections" aria-label="Default select example">
@@ -78,13 +97,14 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
-                </div>`)
-      } else if (document.getElementById('add').value == "2") {
+                </div>`
+          );
+        } else if (document.getElementById("add").value == "2") {
+          // Soft Skills card
 
-
-        // Soft Skills card
-
-        cardContainer.insertAdjacentHTML('beforeend', `<div class="card" style="width: 18rem">
+          cardContainer.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">Soft Skills</h5>
           <h6 class="card-subtitle mb-2 text-muted">
@@ -99,6 +119,8 @@
                 <option value="1">Communication</option>
                 <option value="2">Teamwork</option>
                 <option value="3">Time-Mgmt</option>
+                <option value="4">Self-Learning</option>
+                <option value="5">Problem Solving</option>
               </select>
               <!--Number selection-->
               <select class="form-select" id="rating-selections" aria-label="Default select example">
@@ -115,13 +137,14 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
-                </div>`)
-          } else if (document.getElementById('add').value == "3") {
+                </div>`
+          );
+        } else if (document.getElementById("add").value == "3") {
+          // Agile/Scrum card
 
-
-            // Agile/Scrum card
-
-            cardContainer.insertAdjacentHTML('beforeend', `<div class="card" style="width: 18rem">
+          cardContainer.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">Agile/SCRUM/etc</h5>
           <h6 class="card-subtitle mb-2 text-muted">
@@ -136,6 +159,8 @@
                 <option value="1">Focus</option>
                 <option value="2">Flexibility</option>
                 <option value="3">Forecasting</option>
+                <option value="4">Coaching</option>
+                <option value="5">Brainstorming</option>
               </select>
               <!--Number selection-->
               <select class="form-select" id="rating-selections" aria-label="Default select example">
@@ -152,13 +177,14 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
-                </div>`)
-          } else if (document.getElementById('add').value == "4") {
+                </div>`
+          );
+        } else if (document.getElementById("add").value == "4") {
+          // Project Mgmt card
 
-
-            // Project Mgmt card
-
-            cardContainer.insertAdjacentHTML('beforeend', `<div class="card" style="width: 18rem">
+          cardContainer.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">Project Management</h5>
           <h6 class="card-subtitle mb-2 text-muted">
@@ -173,6 +199,7 @@
                 <option value="1">Leadership</option>
                 <option value="2">Scheduling</option>
                 <option value="3">Risk Mgmt</option>
+                <option value="3">Prioritization</option>
               </select>
               <!--Number selection-->
               <select class="form-select" id="rating-selections" aria-label="Default select example">
@@ -189,9 +216,10 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
-                </div>`)
-          }
-      }
+                </div>`
+          );
+        }
+      };
     </script>
   </body>
 </html>
