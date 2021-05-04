@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Comp, Skill, Training } = require('../models');
+const { User, Skill, Training, Competency } = require('../models');
 
 const userData = require('./userData.json');
 const compData = require('./compData.json');
@@ -9,16 +9,14 @@ const trainingData = require('./trainingData.json')
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-    const users = await User.bulkCreate(userData, {
+    await User.bulkCreate(userData, {
         individualHooks: true,
         returning: true,
     });
-    for (const comp of compData) {
-        const newComp = await Comp.create({
-            ...comp,
-            user_id: users[Math.floor(Math.random() * users.length)].id,
-        });
-    }
+    await Skill.bulkCreate(skillData);
+    await Training.bulkCreate(trainingData);
+    await Competency.bulkCreate(compData);
+
     process.exit(0);
 };
 

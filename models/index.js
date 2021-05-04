@@ -7,26 +7,24 @@ User.hasMany(Competency, {
     foreignKey: 'user_id'
 });
 
+Skill.hasOne(Competency, {
+    foreignKey: 'skill_id'
+});
 
-// Shouldn't this belongsToMany? - notetoself: ask in office hours
-// Competency.hasMany(User, {
-//     foreignKey: 'user_id'
+Training.hasOne(Competency, {
+    foreignKey: 'training_id'
+});
+
+// Training.hasMany(Competency, {
+//     foreignKey: 'id'
 // });
 
-Training.hasMany(Competency, {
-    foreignKey: 'id'
-});
+// Skill.belongsTo(Competency, {
+//     through: Competency,
+//     foreignKey: 'skill_id'
+// });
 
-Skill.belongsTo(Training, {
-    through: Competency,
-    foreignKey: 'id'
-});
-
-Training.hasMany(Skill, {
-    foreignKey: 'id'
-});
-
-// Competency.hasMany(Training, {
+// Training.hasMany(Skill, {
 //     foreignKey: 'id'
 // });
 
