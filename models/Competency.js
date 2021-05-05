@@ -26,10 +26,6 @@ Competency.init(
         comment: {
             type: DataTypes.STRING,
             allowNull: true,
-            // references: {
-            //     model: 'user',
-            //     key: 'id'
-            // }
         },
         date_taken: {
             type: DataTypes.DATE,
