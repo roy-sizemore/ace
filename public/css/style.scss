@@ -5,9 +5,8 @@ $imageSmall: 60px;
 $padding: 10px;
 
 .ace-logo {
-  width: 10rem;
+  width: 15rem;
   height: auto;
-  border: 2px solid red;
 }
 
 .small-ace-logo {
@@ -22,13 +21,14 @@ $padding: 10px;
 
 .left-page {
   border: 2px solid blue;
-  width: 50rem;
+  width: 65%;
   height: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .right-page {
   border: 2px solid lime;
-  width: 30rem;
+  width: 35%;
   height: 38.1rem;
   justify-content: center;
 }
@@ -36,6 +36,23 @@ $padding: 10px;
 .sign-in {
   text-align: center;
   margin-top: 10rem;
+}
+
+.ace-h1 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+.info-blurb{
+text-align: center;
+font-size: 1.5rem
 }
 
 .branding {
@@ -134,12 +151,6 @@ body {
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
-}
-
-img {
-  border-radius: 50%;
-  height: $imageSmall;
-  width: $imageSmall;
 }
 
 .table-users {
