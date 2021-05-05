@@ -1,7 +1,6 @@
 .ace-logo {
-  width: 10rem;
+  width: 15rem;
   height: auto;
-  border: 2px solid red;
 }
 
 .small-ace-logo {
@@ -18,13 +17,14 @@
 
 .left-page {
   border: 2px solid blue;
-  width: 50rem;
+  width: 65%;
   height: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .right-page {
   border: 2px solid lime;
-  width: 30rem;
+  width: 35%;
   height: 38.1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -34,6 +34,23 @@
 .sign-in {
   text-align: center;
   margin-top: 10rem;
+}
+
+.ace-h1 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+.info-blurb {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .branding {
@@ -168,12 +185,6 @@ body * {
   text-transform: uppercase;
 }
 
-img {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-}
-
 .table-users {
   border: 1px solid #327a81;
   border-radius: 10px;
@@ -182,7 +193,7 @@ img {
   max-width: calc(100% - 2em);
   margin: 1em auto;
   overflow: hidden;
-  width: 1000px;
+  width: 800px;
 }
 
 table {
