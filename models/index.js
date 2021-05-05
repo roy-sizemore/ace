@@ -1,11 +1,15 @@
 const User = require('./User');
 const Competency = require('./Competency');
+const Category = require('./Category');
 const Training = require('./Training');
 const Skill = require('./SkillLevel');
-const Category = require('./Category');
 
 User.hasMany(Competency, {
     foreignKey: 'user_id'
+});
+
+Category.hasMany(Training, {
+    foreignKey: 'category_id'
 });
 
 Skill.hasOne(Competency, {
@@ -16,8 +20,6 @@ Training.hasOne(Competency, {
     foreignKey: 'training_id'
 });
 
-Category.hasMany(Training, {
-    foreignKey: 'category_id'
-});
+
 
 module.exports = { User, Competency, Training, Skill, Category };
