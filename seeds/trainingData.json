@@ -1,80 +1,82 @@
 [
     {
-        "training_name": "JavaScript/ECMAScript"
+        "training_name": "JavaScript/ECMAScript",
+        "category_id": 1
     },
     {
-        "training_name": "Java"
+        "training_name": "Java",
+        "category_id": 1
     },
     {
-        "training_name": "Python"
+        "training_name": "Python",
+        "category_id": 1
     },
     {
-        "training_name": "TypeScript"
+        "training_name": "TypeScript",
+        "category_id": 1
     },
     {
-        "training_name": "Angular"
+        "training_name": "Angular",
+        "category_id": 1
     },
     {
-        "training_name": "Ruby"
+        "training_name": "Ruby",
+        "category_id": 1
     },
     {
-        "training_name": "Agile/SCRUM"
+        "training_name": "Focus",
+        "category_id": 2
     },
     {
-        "training_name": "Focus"
+        "training_name": "Flexibility",
+        "category_id": 2
     },
     {
-        "training_name": "Flexibility"
+        "training_name": "Forecasting",
+        "category_id": 2
     },
     {
-        "training_name": "Forecasting"
+        "training_name": "Coaching",
+        "category_id": 2
     },
     {
-        "training_name": "Coaching"
+        "training_name": "Brainstorming",
+        "category_id": 2
     },
     {
-        "training_name": "Brainstorming"
+        "training_name": "Communication",
+        "category_id": 3
     },
     {
-        "training_name": "Communication"
+        "training_name": "Teamwork",
+        "category_id": 3
     },
     {
-        "training_name": "Teamwork"
+        "training_name": "Time-Mgmt",
+        "category_id": 3
     },
     {
-        "training_name": "Kaban"
+        "training_name": "Self-Learning",
+        "category_id": 3
     },
     {
-        "training_name": "Project Management"
+        "training_name": "Problem Solving",
+        "category_id": 3
     },
     {
-        "training_name": "Bootstrap"
+        "training_name": "Leadership",
+        "category_id": 4
     },
     {
-        "training_name": "SQL DB"
+        "training_name": "Scheduling",
+        "category_id": 4
     },
     {
-        "training_name": "MongoDB"
+        "training_name": "Risk Mgmt",
+        "category_id": 4
     },
     {
-        "training_name": "Self-Learning"
-    },
-    {
-        "training_name": "Time-Mgmt"
-    },
-    {
-        "training_name": "Problem Solving"
-    },
-    {
-        "training_name": "Leadership"
-    },
-    {
-        "training_name": "Scheduling"
-    },
-    {
-        "training_name": "Risk Mgmt"
-    },
-    {
-        "training_name": "Prioritization"
+        "training_name": "Prioritization",
+        "category_id": 4
     }
 ]
