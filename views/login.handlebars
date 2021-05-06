@@ -1,59 +1,53 @@
 <div>
-  <div class="full-page">
-    <!--Left side of page-->
-    <div class="left-page">
-      <!--Logo-->
-      <div>
-        <img class="col-md ace-logo" src="/img/ace-3-removebg-preview.png" />
-      </div>
-      <!--Branding Section-->
-      <div>
-        <h1 class="branding">ACE</h1>
-        <h2 class="branding">Altitude Competency Engine</h2>
-        <h3 class="branding">Track your employee's competency levels to track their skill and knowledge development.
-        </h3>
-      </div>
-    </div>
+      <div class="full-page">
+        <!--Left side of page-->
+        <div class="left-page">
+          <div>
+            <img class="col-md ace-logo" src="../public/img/ace-logo.png"/>
+          </div>
+          <!--Branding Section-->
+          <div>
+            <h1 class="ace-h1">A.C.E</h1>
+            <h2 class="slogan">
+              The best employee training software to meet your needs.
+            </h2>
+            <h3 class="info-blurb">
+              A.C.E provides a quick and seamless process to manage employee
+              training information. We bring your team's progress all to one
+              place and cut out the hassle of papertrails. Our software gives
+              working teams the time to focus on what matters most.
+            </h3>
+          </div>
+        </div>
         <!--Right side of page-->
         <div class="right-page">
           <div>
-            <h2 class="sign-in">Sign In</h2>
-            <div class="input-group mb-3">
-              <input
-                id="username-input"
-                type="text"
-                class="form-control"
-                placeholder="Email"
-                aria-label="Email"
-                aria-describedby="basic-addon1"
-              />
+            <h2 class="sign-in-header">Sign In</h2>
+            <div id="username-input" class="input-group mb-3">
+              <input id="username-input" type="text" class="form-control" placeholder="Email" aria-label="Email" style="font-family: 'Titillium Web', sans-serif" aria-describedby="basic-addon1"/>
             </div>
-            <div>
-              <input type="password" id="pw-input" class="form-control" placeholder="Password" aria-label="Password"
-              aria-describedby="basic-addon1"/>
-              <input type="checkbox" onclick="myFunction()">Show Password
+            <div id="pw-field">
+              <input type="password" id="pw-input" class="form-control" placeholder="Password" aria-label="Password" style="font-family: 'Titillium Web', sans-serif" aria-describedby="basic-addon1"/>
+              <div id="show-pass">
+                <input type="checkbox" onclick="myFunction()"/> Show Password
+              </div>
             </div>
-            <div>
-              <button type="submit" id="login-button">Login</button>
+            <div class="login-button">
+              <button type="button login-button" style="font-family: 'Titillium Web', sans-serif" class="btn btn-primary" onclick="">
+                Sign In
+              </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-</div>
-<script>
-  function myFunction() {
-    var password = document.getElementById("pw-input");
-    if (password.type === "password") {
-      password.type = "text";
-    } else {
-      password.type = "password";
-    }
-  }
-
+    <script>
+      function myFunction() {
+        var password = document.getElementById("pw-input");
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      }
     </script>
-
-    <script src="/javascript/login.js"></script>
-
