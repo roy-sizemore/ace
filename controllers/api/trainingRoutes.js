@@ -6,9 +6,8 @@ router.post('/competencies', (req, res) => {
     User.findAll()
 });
 
-// Do we need to have this route? Or do we need a JS file? Or both?
 router.get('/', withAuth, async (req, res) => {
-    const profile = await User.findAll(req.session.user_id);
+    const profile = await User.findAll(req.session.id);
     res.json(profile);
 })
 
