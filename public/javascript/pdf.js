@@ -12,15 +12,28 @@ const user = {
 
 const training_name = 'Java'
 
-doc.fontSize(35).text('Certificate of Completion', 100, 80);
-
-// doc.image('../img/ace-logo-resized.png', { fit: [100, 100], align: 'center' })
-//     .text('ACE', 0, 0);
-
 doc
-    .text(`Congratulations ${user.name}`, {
+    .fontSize(35).text('Certificate of Completion', 100, 80, {
         align: 'center',
     })
+    .moveDown()
+    .moveDown()
+    .moveDown();
+
+// doc
+//     .image('../public/img/ace-logo-resized.png', { fit: [100, 100], align: 'center' }, {
+//         align: 'center',
+//     })
+//     .text('ACE', 0, 0, {
+//         align: 'center',
+//     });
+
+doc
+    .text(`Congratulations ${user.name}!`, {
+        align: 'center',
+    })
+    .moveDown()
+    .moveDown()
     .moveDown()
     .text(`Successful completion of the ${training_name} training!`, {
         size: 25,

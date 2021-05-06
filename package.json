@@ -28,5 +28,6 @@
     "mysql2": "^2.2.5",
     "pdfkit": "^0.12.1",
     "sequelize": "^6.6.2"
-  }
+  },
+  "devDependencies": {}
 }
