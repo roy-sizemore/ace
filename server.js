@@ -1,5 +1,3 @@
-// Need to create a list of dependencies and generate a package.json
-
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
