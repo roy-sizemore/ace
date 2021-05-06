@@ -1,20 +1,31 @@
 <div>
-      <div class="full-page">
-        <!--Left side of page-->
-        <div class="left-page">
-          <!--Logo-->
-          <div>
-            <img
-              class="col-md ace-logo"
-              src="../public/img/ace-3-removebg-preview.png"
-            />
-          </div>
-          <!--Branding Section-->
-          <div>
-            <h1 class="branding">ACE</h1>
-            <h2 class="branding">Slogan here</h2>
-            <h3 class="branding">Quick description blurb</h3>
-          </div>
+  <div class="full-page">
+    <!--Left side of page-->
+    <div class="left-page">
+      <!--Logo-->
+      <div>
+        <img class="col-md ace-logo" src="../public/img/ace-3-removebg-preview.png" />
+      </div>
+      <!--Branding Section-->
+      <div>
+        <h1 class="branding">ACE</h1>
+        <h2 class="branding">Altitude Competency Engine</h2>
+        <h3 class="branding">Track your employee's competency levels to track their skill and knowledge development.
+        </h3>
+      </div>
+    </div>
+    <!--Right side of page-->
+    <div class="right-page">
+      <div>
+        <h2 class="sign-in">Sign In</h2>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" />
+        </div>
+        <div>
+          <input type="password" id="pw-input" class="form-control" placeholder="Password" aria-label="Password"
+            aria-describedby="basic-addon1" />
+          <input type="checkbox" onclick="myFunction()">Show Password
         </div>
         <!--Right side of page-->
         <div class="right-page">
@@ -38,18 +49,23 @@
               <button type="submit" class="login-button">Login</button>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-    <script>
-       function myFunction() {
-  var password = document.getElementById("pw-input");
-  if (password.type === "password") {
-    password.type = "text";
-  } else {
-    password.type = "password";
+  </div>
+</div>
+<script>
+  function myFunction() {
+    var password = document.getElementById("pw-input");
+    if (password.type === "password") {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
   }
 }
     </script>
 
     <script src="../../public/javascript/login.js"></script>
+
