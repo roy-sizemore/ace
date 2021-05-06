@@ -27,8 +27,29 @@
             aria-describedby="basic-addon1" />
           <input type="checkbox" onclick="myFunction()">Show Password
         </div>
-        <div class="login-button">
-          <input type="button" value="Sign In" onclick="" />
+        <!--Right side of page-->
+        <div class="right-page">
+          <div>
+            <h2 class="sign-in">Sign In</h2>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div>
+              <input type="password" id="pw-input" class="form-control" placeholder="Password" aria-label="Password"
+              aria-describedby="basic-addon1"/>
+              <input type="checkbox" onclick="myFunction()">Show Password
+            </div>
+            <div>
+              <button type="submit" class="login-button">Login</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -43,4 +64,8 @@
       password.type = "password";
     }
   }
-</script>
+}
+    </script>
+
+    <script src="../../public/javascript/login.js"></script>
+
