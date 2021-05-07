@@ -7,24 +7,25 @@ const loginFormHandler = async (event) => {
 
   if (email && password) {
     // Send a POST request to the API endpoint
-    const response = await fetch('/api/users/login', {
+    let response = await fetch('/api/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
-    });
+    })
+    
+    const body = await response.json();
 
-    if (response.ok) {
-      if (!isTrainer) {
-      // If successful, redirect the browser to the profile page
-      document.location.replace('/competencies');
+    // if (response.status === 200) {
+      if (!body.user.is_trainer) {
+        document.location.replace('/competencies');
+      } else {
+        document.location.replace('/training');
+      }
     } else {
-      document.location.replace('/training');
-    }
-  } else {
-    document.location.replace('/login');
+      document.location.replace('/login');
+    };
   };
-  };
-};
+// };
 
 document
   .querySelector('#login-button')
