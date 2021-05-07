@@ -22,7 +22,7 @@ doc
     .moveDown(3);
 
 // doc
-//     .image('/img/ace-logo.png', 320, 15, { fit: [100, 100], align: 'center' }, {
+//     .image('img/ace-logo-PDF.jpeg', 320, 15, { fit: [100, 100], align: 'center' }, {
 //         align: 'center',
 //     })
 //     .text('ACE', 0, 0, {
