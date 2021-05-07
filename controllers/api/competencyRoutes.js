@@ -9,6 +9,7 @@ router.get('/', withAuth, async (req, res) => {
     res.json(profile);
 });
 
+// POST to add comments
 router.post('/competencies', (req, res) => {
     User.findAll({
         attributes: ['id'],
