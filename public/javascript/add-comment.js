@@ -3,10 +3,10 @@ async function newFormHandler(event) {
 
     const comment = document.querySelector("#comment-box").value
 
-    const response = await fetch(`/api/dish`, {
+    const response = await fetch(`/api/competencies`, {
         method: 'POST',
         body: JSON.stringify({
-            
+
         })
     })
 }
