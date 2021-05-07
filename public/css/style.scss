@@ -20,39 +20,43 @@ $padding: 10px;
 }
 
 .left-page {
-  border: 2px solid blue;
   width: 65%;
   height: auto;
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(93, 168, 238, 0.349); 
 }
 
 .right-page {
-  border: 2px solid lime;
   width: 35%;
   height: 38.1rem;
   justify-content: center;
 }
 
-.sign-in {
+.sign-in-header {
   text-align: center;
   margin-top: 10rem;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .ace-h1 {
   margin-top: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Cairo', sans-serif;
 }
 
 .slogan {
   text-align: center;
   font-size: 3.2rem;
   margin-top: 2rem;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .info-blurb{
 text-align: center;
-font-size: 1.5rem
+font-size: 1.5rem;
+font-family: 'Titillium Web', sans-serif;
 }
 
 .branding {
@@ -61,7 +65,7 @@ font-size: 1.5rem
 }
 
 .login-button {
-  margin-left: 13.5rem;
+  margin-left: 43%;
   margin-top: 2rem;
 }
 
@@ -84,6 +88,10 @@ font-size: 1.5rem
   margin-top: 2rem;
 }
 
+.titillium-font {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 #trainer-button {
   margin-right: 10px;
   width: 9rem;
@@ -98,15 +106,16 @@ font-size: 1.5rem
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 2px solid red;
+  // border: 2px solid red;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 1rem;
 }
 
 #comp-container {
-  border: 2px solid blue;
+  // border: 2px solid blue;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 80rem;
 }
 
 #dropdown-menus {
@@ -128,7 +137,7 @@ font-size: 1.5rem
   align-items: center;
   flex-direction: column;
   margin-top: 6rem;
-  border: 2px solid red;
+  // border: 2px solid red;
 }
 
 #trainer-header {
@@ -137,15 +146,38 @@ font-size: 1.5rem
   padding-right: 10rem;
 }
 
-body {
-  background-color: lighten($baseColor, 30%);
-  * {
-    box-sizing: border-box;
-  }
+#username-input {
+  width: 91.5%;
+  margin-left: 1.5%;
 }
 
+#pw-input {
+  width: 90%;
+  margin-left: 3%;
+}
+
+#show-pass {
+  margin-left: 3%;
+  margin-top: 5px;
+}
+
+#competency-full-body {
+background-color: rgba(93, 168, 238, 0.349); 
+}
+
+#trainer-body {
+  background-color: rgba(93, 168, 238, 0.349); 
+}
+
+// body {
+//   background-color: lighten($baseColor, 30%);
+//   * {
+//     box-sizing: border-box;
+//   }
+// }
+
 .header {
-  background-color: darken($baseColor, 5%);
+  background-color: rgb(85,122,149);
   color: white;
   font-size: 1.5em;
   padding: 1rem;
@@ -173,7 +205,7 @@ table {
   }
 
   td {
-    text-align: center;
+    // text-align: center;
     vertical-align: middle;
 
     &:last-child {
@@ -184,7 +216,7 @@ table {
   }
 
   th {
-    background-color: lighten($baseColor, 50%);
+    background-color: rgba(115, 149, 174, 0.418);
     font-weight: 300;
   }
 
@@ -193,7 +225,7 @@ table {
       background-color: white;
     }
     &:nth-child(2n + 1) {
-      background-color: lighten($baseColor, 55%);
+      background-color: rgba(124, 154, 175, 0.247);
     }
   }
 }

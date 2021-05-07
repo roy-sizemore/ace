@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trainer</title>
-    <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="scss-stylesheet" href="../public/css/style.scss" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <img class="col-md small-ace-logo" src="../public/img/ace-3-removebg-preview.png"/>
-    <div id="trainer-container">
-      <div id="trainer-header">
-        <h2>Trainees</h2>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Trainer</title>
+   <link rel="stylesheet" href="../../public/css/style.css">
+   <link rel="scss-stylesheet" href="../../public/css/style.scss" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+</head>
+
+<body>
+   <div id="trainer-body">
+      <img class="col-md small-ace-logo" src="../../public/img/ace-logo.png" />
+      <div id="trainer-container">
+         <h3 class="titillium-font">View & Verify Trainees</h3>
+         <h6 class="titillium-font">Click the employee's name to view the trainings that they've completed.</h5>
       </div>
-    </div>
-    <div class="table-users">
-      <div class="header">Trainees</div>
-      
-      <table cellspacing="0">
-         <tr>
-            <th>Name</th>
-            <th>Employee E-Mail</th>
-            <th>ID #</th>
-            <th>Trainings Completed</th>
-            <!-- <th width="230">Comments</th> -->
-         </tr>
-   
-         <tr></tr>
-            <td><a href="#">Jane Doe</a></td>
-            <td>jane.doe@foo.com</td>
+      <div class="table-users">
+         <div class="header">
+            <h3 class="titillium-font">Trainees</h3>
+         </div>
+
+         <table cellspacing="0">
+            <tr>
+               <th class="titillium-font">Name</th>
+               <th class="titillium-font">E-Mail</th>
+               <th class="titillium-font">ID #</th>
+               <!-- <th width="230">Comments</th> -->
+            </tr>
+
+            <tr></tr>
+            <td><a href="#">Roy</a></td>
+            <td>roy@email.com</td>
             <td>01</td>
-         </tr>
-   
-         <tr></tr>
-            <td>John Doe</td>
-            <td>john.doe@foo.com</td>
+            </tr>
+
+            <tr>
+            <td><a href="#">Tre'</a></td>
+            <td>tre@email.com</td>
             <td>02</td>
-         </tr>
-   
-         <tr>
-            <td>Jane Smith</td>
-            <td>jane.smith@foo.com</td>
-            <td>03</td>
-         </tr>
-         
-         <tr>
-            <td>John Smith</td>
-            <td>john.smith@foo.com</td>
-            <td>04</td>
-         </tr>
-      </table>
+            </tr>
+
+            <tr>
+               <td><a href="#">Heather</a></td>
+               <td>heather@email.com</td>
+               <td>03</td>
+            </tr>
+
+            <tr>
+               <td><a href="#">Bob</a></td>
+               <td>bob@email.com</td>
+               <td>04</td>
+            </tr>
+
+            <tr>
+               <td><a href="#">Suzie</a></td>
+               <td>suzie@email.com</td>
+               <td>05</td>
+            </tr>
+
+            <tr>
+               <td><a href="#">Stan</a></td>
+               <td>stan@email.com</td>
+               <td>06</td>
+            </tr>
+         </table>
+      </div></br></br>
    </div>
-  </body>
+</body>
+
 </html>

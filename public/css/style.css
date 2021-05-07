@@ -16,14 +16,13 @@
 }
 
 .left-page {
-  border: 2px solid blue;
   width: 65%;
   height: auto;
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(93, 168, 238, 0.349);
 }
 
 .right-page {
-  border: 2px solid lime;
   width: 35%;
   height: 38.1rem;
   -webkit-box-pack: center;
@@ -31,26 +30,31 @@
           justify-content: center;
 }
 
-.sign-in {
+.sign-in-header {
   text-align: center;
   margin-top: 10rem;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .ace-h1 {
   margin-top: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Cairo', sans-serif;
 }
 
 .slogan {
   text-align: center;
   font-size: 3.2rem;
   margin-top: 2rem;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .info-blurb {
   text-align: center;
   font-size: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .branding {
@@ -59,7 +63,7 @@
 }
 
 .login-button {
-  margin-left: 13.5rem;
+  margin-left: 43%;
   margin-top: 2rem;
 }
 
@@ -89,6 +93,10 @@
   margin-top: 2rem;
 }
 
+.titillium-font {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 #trainer-button {
   margin-right: 10px;
   width: 9rem;
@@ -110,11 +118,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid red;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 1rem;
 }
 
 #comp-container {
-  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +132,6 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 80rem;
 }
 
 #dropdown-menus {
@@ -158,7 +165,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 6rem;
-  border: 2px solid red;
 }
 
 #trainer-header {
@@ -167,17 +173,31 @@
   padding-right: 10rem;
 }
 
-body {
-  background-color: #91ced4;
+#username-input {
+  width: 91.5%;
+  margin-left: 1.5%;
 }
 
-body * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+#pw-input {
+  width: 90%;
+  margin-left: 3%;
+}
+
+#show-pass {
+  margin-left: 3%;
+  margin-top: 5px;
+}
+
+#competency-full-body {
+  background-color: rgba(93, 168, 238, 0.349);
+}
+
+#trainer-body {
+  background-color: rgba(93, 168, 238, 0.349);
 }
 
 .header {
-  background-color: #327a81;
+  background-color: #557a95;
   color: white;
   font-size: 1.5em;
   padding: 1rem;
@@ -207,7 +227,6 @@ table th {
 }
 
 table td {
-  text-align: center;
   vertical-align: middle;
 }
 
@@ -218,7 +237,7 @@ table td:last-child {
 }
 
 table th {
-  background-color: #daeff1;
+  background-color: rgba(115, 149, 174, 0.418);
   font-weight: 300;
 }
 
@@ -227,7 +246,7 @@ table tr:nth-child(2n) {
 }
 
 table tr:nth-child(2n + 1) {
-  background-color: #edf7f8;
+  background-color: rgba(124, 154, 175, 0.247);
 }
 
 @media screen and (max-width: 700px) {
