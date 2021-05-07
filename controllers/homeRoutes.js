@@ -22,7 +22,7 @@ router.get('/training', withAuth, async (req, res) => {
 })
 
 // Route to select a single trainee
-router.get('/competencies/:id', withAuth, async, (req, res) => {
+router.get('/competencies/:id', withAuth, async (req, res) => {
   const trainee = await User.findByPk(req.params.id);
   res.render('trainee');
 });
