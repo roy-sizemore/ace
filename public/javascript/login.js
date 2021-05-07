@@ -28,5 +28,5 @@ const loginFormHandler = async (event) => {
 // };
 
 document
-  .querySelector('#login-button')
+  .querySelector('#pw-input')
   .addEventListener('click', loginFormHandler);

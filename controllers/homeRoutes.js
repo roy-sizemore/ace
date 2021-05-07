@@ -17,7 +17,7 @@ router.get('/training', withAuth, async (req, res) => {
   res.render('trainer');
 })
 
-router.get('/competencies', withAuth, (req, res) => {
+router.get('/competencies/:id', withAuth, (req, res) => {
   const trainee = User.findByPk(req.params.id);
   res.render('trainee');
 });
