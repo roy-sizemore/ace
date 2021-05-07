@@ -27,13 +27,14 @@ router.get('/competencies/:id', withAuth, async, (req, res) => {
   res.render('trainee');
 });
 
-// Trainee routes - logic to separate roles?
+// Trainee routes
+// Trainee can view their training
 router.get('/competencies', withAuth, async (req, res) => {
   const profile = await User.findByPk(req.params.id);
   res.render('competencies');
 });
 
-// TODO: Unfinished - POST to add comments
+// POST route so trainees can add comments
 router.post('/competencies/:id', withAuth, async (req, res) => {
   const traineeCompetency = await Competency.findByPk(req.params.id);
   res.render('competencies');
