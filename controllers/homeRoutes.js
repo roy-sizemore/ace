@@ -34,10 +34,21 @@ router.get('/competencies', withAuth, async (req, res) => {
   res.render('competencies');
 });
 
-// POST route so trainees can add comments
-router.post('/competencies/:id', withAuth, async (req, res) => {
-  const traineeCompetency = await Competency.findByPk(req.params.id);
-  res.render('competencies');
+// POST route to add comments
+router.post('/competencies', (req, res) => {
+  User.findAll({
+      attributes: ['id'],
+      include: [
+          {
+              model: User,
+              attributes: ['id', 'name']
+          }
+      ]
+  })
+      .then(data => res.json(data))
+      .catch(err => {
+          res.status(500).json(err);
+      });
 });
 
 module.exports = router;
