@@ -18,15 +18,6 @@ doc
     .fillColor('blue')
     .moveDown(3);
 
-// doc.fillColor('gold')
-//     .translate(-100, -50)
-//     .scale(0.5);
-
-doc
-    .scale(0.3)
-    .path('M 250,75 L 323,301 131,161 369,161 177,301 z')
-    .fill('non-zero');
-
 //image section - not working; seems to be an issue with PDFKit and interlacing; tried multiple potential fixes with no success
 // doc
 //     .image('img/ace-logo.png', 320, 15, { fit: [100, 100], align: 'center' }, {
