@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { Competency, User } = require('../../models');
+const {User} = require('../../models');
 // const withAuth = require('../../utils/auth');
+const pdf = require('../../public/javascript/pdf');
 
 
 router.get('/', async (req, res) => {
@@ -25,6 +26,5 @@ router.post('/competencies', (req, res) => {
             res.status(500).json(err);
         });
 });
-
 
 module.exports = router;

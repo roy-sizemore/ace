@@ -41,3 +41,4 @@ doc
 //renders files
 doc.end();
 
+module.exports = PDFDocument;
