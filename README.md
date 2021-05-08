@@ -2,7 +2,7 @@
 
 ![logo](./public/img/ace-logo.png)
 
-OSU Full Stack Coding Bootcamp Project 2 - Altitude Competency Tracker (ACE)
+OSU Full Stack Coding Bootcamp Project 2 - Altitude Competency Engine (ACE)
 MVC - Sequelize - Handlebars - PDFKit - Express - Express-Session - BCRYPT - CSS/SCSS - DOTENV - JS
 
 ---
