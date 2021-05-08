@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Competency, User } = require('../../models');
-const withAuth = require('../../utils/auth');
+// const withAuth = require('../../utils/auth');
 
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
     console.log(req.session);
     const profile = await User.findAll(req.session.id);
     res.json(profile);
