@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const {User} = require('../../models');
 // const withAuth = require('../../utils/auth');
-const pdf = require('../../public/javascript/pdf');
-
 
 router.get('/', async (req, res) => {
     console.log(req.session);

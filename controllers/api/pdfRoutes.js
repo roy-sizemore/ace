@@ -1,6 +1,6 @@
-const router = require('express').Router();
-const pdfKit = require('../../public/javascript/pdf');
+// const router = require('express').Router();
+// const pdfKit = require('../../public/javascript/pdf');
 
-router.get('/pdf', async (req, res) => {
-    const pdf = await doc.
-})
+// router.get('/pdf', async (req, res) => {
+//     const pdf = await doc.
+// })
