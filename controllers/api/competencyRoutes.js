@@ -1,15 +1,15 @@
 const router = require('express').Router();
 const {User} = require('../../models');
-// const withAuth = require('../../utils/auth');
+const withAuth = require('../../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     console.log(req.session);
     const profile = await User.findAll(req.session.id);
     res.json(profile);
 });
 
 // POST to add comments
-router.post('/competencies', (req, res) => {
+router.post('/competencies', withAuth, (req, res) => {
     User.findAll({
         attributes: ['id'],
         include: [
