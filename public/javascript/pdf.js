@@ -18,6 +18,12 @@ doc
     .fillColor('blue')
     .moveDown(3);
 
+    doc.image(path.join(__dirname, '../img/ace-logo.png'), 320, 15, { fit: [100, 100], align: 'center' }, {
+        align: 'center',
+    })
+        .text('ACE', 0, 0, {
+            align: 'center',
+        });
 //image section - not working; seems to be an issue with PDFKit and interlacing; tried multiple potential fixes with no success
 // doc
 //     .image('img/ace-logo.png', 320, 15, { fit: [100, 100], align: 'center' }, {
