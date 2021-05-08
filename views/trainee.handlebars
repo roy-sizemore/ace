@@ -1,7 +1,7 @@
 <div id="competency-full-body">
   <img class="col-md small-ace-logo" src="/img/ace-logo.png" />
   <div id="header-container">
-    <h3>{{ user.name }}}</h3>
+    <h3>{{ user.name }}</h3>
     <h3>{{ user.id }}</h3>
     <br /><br />
     <h3>Choose Your Training</h3>
@@ -57,7 +57,6 @@
           <input class="form-control" type="date" value="2021-05-08" id="example-date-input"
             style="margin-bottom: 1rem">
 
-          {{#each blank as |blank|}}
           <!-- Hidden part of card only seen by TRAINER-->
           <!--Comment box and Save Button-->
           <div class="form-group" id="commentBox" style="margin-top: 10px">
@@ -65,11 +64,13 @@
             <textarea class="form-control" rows="5" id="comment"></textarea>
             <button type="button" id="save-comment" class="btn btn-primary btn-sm" style="margin-top: 9px">Save</button>
           </div>
-          {{/each}}
+
         </div>
+        {{/each}}
       </div>
     </div>
   </div>
+</div>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -138,10 +139,23 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
+<<<<<<< HEAD
                 </div>`
       );
     } else if (document.getElementById("add").value == "2") {
       // Soft Skills card
+=======
+                </div>
+                <div class="form-group" id="commentBox" style="margin-top: 10px">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <button type="button" id="save-comment" class="btn btn-primary btn-sm"
+                style="margin-top: 9px">Save</button>
+            </div>`
+        );
+      } else if (document.getElementById("add").value == "2") {
+        // Soft Skills card
+>>>>>>> main
 
       cardContainer.insertAdjacentHTML(
         "beforeend",
@@ -178,10 +192,23 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
+<<<<<<< HEAD
                 </div>`
       );
     } else if (document.getElementById("add").value == "3") {
       // Agile/Scrum card
+=======
+                </div>
+                <div class="form-group" id="commentBox" style="margin-top: 10px">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <button type="button" id="save-comment" class="btn btn-primary btn-sm"
+                style="margin-top: 9px">Save</button>
+            </div>`
+        );
+      } else if (document.getElementById("add").value == "3") {
+        // Agile/Scrum card
+>>>>>>> main
 
       cardContainer.insertAdjacentHTML(
         "beforeend",
@@ -218,10 +245,23 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
+<<<<<<< HEAD
                 </div>`
       );
     } else if (document.getElementById("add").value == "4") {
       // Project Mgmt card
+=======
+                </div>
+                <div class="form-group" id="commentBox" style="margin-top: 10px">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <button type="button" id="save-comment" class="btn btn-primary btn-sm"
+                style="margin-top: 9px">Save</button>
+            </div>`
+        );
+      } else if (document.getElementById("add").value == "4") {
+        // Project Mgmt card
+>>>>>>> main
 
       cardContainer.insertAdjacentHTML(
         "beforeend",
@@ -257,8 +297,21 @@
                 <label for="example-date-input" class="col-2 col-form-label" style="width: 15rem">Date Completed</label>
                 <div class="col-10">
                   <input class="form-control" type="date" value="2011-08-19" id="example-date-input" style="margin-bottom: 1rem">
+<<<<<<< HEAD
                 </div>`
       );
     }
   };
 </script>
+=======
+</div>
+<div class="form-group" id="commentBox" style="margin-top: 10px">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+  <button type="button" id="save-comment" class="btn btn-primary btn-sm" style="margin-top: 9px">Save</button>
+</div>`
+);
+}
+};
+</script>
+>>>>>>> main
