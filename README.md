@@ -41,7 +41,7 @@ In order to use the ACE application locally, you will want to:
 ## Usage
 
 ACE can be used with permission.\
-[This program can be used in Heroku]()
+[This program can be used in Heroku](https://nameless-thicket-55768.herokuapp.com/)
 
 ---
 
@@ -64,5 +64,5 @@ Trey Scott\
 📂[GitHub]
 
 Roy Sizemore\
-✉️[Email]
-📂[GitHub]
+✉️[Email](mailto:sizemore.coding@gmail.com)\
+📂[GitHub](https://github.com/roy-sizemore)
