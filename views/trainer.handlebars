@@ -1,58 +1,22 @@
-<div id="trainer-body">
-   <img class="col-md small-ace-logo" src="../../public/img/ace-logo.png" />
-   <div id="trainer-container">
-      <h3 class="titillium-font">View & Verify Trainees</h3>
-      <h6 class="titillium-font">Click the employee's name to view the trainings that they've completed.</h5>
-   </div>
-   <div class="table-users">
-      <div class="header">
-         <h3 class="titillium-font">Trainees</h3>
-      </div>
-      <div id="users"></div>
 
+<div id="users"></div>
+<table>
+<thead>
+  <tr>
+    {{#each array.[0]}}
+      <th>{{@key}}</th>
+    {{/each}}
+  </tr>
+</thead>
+<tbody>
+  {{#each array}}
+    <tr>
+      {{#each this}}
+        <td>{{this}}</td>
+      {{/each}}
+    </tr>
+  {{/each}}
+</tbody>
+</table>
 <script type="text/x-handlebars-template" id="tableTemplate"></script>
-      <table cellspacing="0">
-         <tr>
-            <th class="titillium-font">Name</th>
-            <th class="titillium-font">E-Mail</th>
-            <th class="titillium-font">ID #</th>
-         </tr>
 
-         <tr></tr>
-         <td><a href="#">{{#each array.[0]}}</a></td>
-         <td>{{#each array.[0].[1]}}</td>
-         <td>{{@key}}</td>
-         </tr>
-
-         <tr>
-            <td><a href="#">{{#each array.[1]}}</a></td>
-            <td>{{#each array.[1].[1]}}</td>
-            <td>{{@key}}</td>
-         </tr>
-
-         <tr>
-            <td><a href="#">{{#each array.[2]}}</a></td>
-            <td>{{#each array.[2].[1]}}</td>
-            <td>{{@key}}</td>
-         </tr>
-
-         <tr>
-            <td><a href="#">{{#each array.[3]}}</a></td>
-            <td>{{#each array.[3].[1]}}</td>
-            <td>{{@key}}</td>
-         </tr>
-
-         <tr>
-            <td><a href="#">{{#each array.[4]}}</a></td>
-            <td>{{#each array.[4].[1]}}</td>
-            <td>{{@key}}</td>
-         </tr>
-
-         <tr>
-            <td><a href="#">{{#each array.[5]}}</a></td>
-            <td>{{#each array.[5].[1]}}</td>
-            <td>{{@key}}</td>
-         </tr>
-      </table>
-   </div></br></br>
-</div>

@@ -1,7 +1,7 @@
 $(function () {
     let templateText = $('#tableTemplate').html();
 
-    let tableTeamplate = Handlebars.compile(templateText);
+    let tableTemplate = Handlebars.compile(templateText);
 
     let users = [
         { "Employee Name": "Roy", "E-Mail": "roy@email.com", "ID #": 01 },
@@ -12,5 +12,5 @@ $(function () {
         { "Employee Name": "Stan", "E-Mail": "stan@email.com", "ID #": 06 },
     ];
 
-    $('#users').html(tableTeamplate({ array: users }));
+    $('#users').html(tableTemplate({ array: users }));
 });
