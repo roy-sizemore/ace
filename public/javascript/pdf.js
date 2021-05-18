@@ -1,6 +1,7 @@
 //require modules
 const PDFDocument = require('pdfkit');
 const fs = require('fs');
+const jscompress = require('../dist/index');
 //document setup and write to file name
 const doc = new PDFDocument({ font: 'Helvetica', layout: 'landscape' });
 doc.pipe(fs.createWriteStream('certificate.pdf'));
